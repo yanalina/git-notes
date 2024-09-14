@@ -22,3 +22,4 @@
 | if you encounter "Your local changes to the following files would be overwritten by merge" when tried to use `git merge origin`, use<br>`git stash push --include-untracked`<br>`git stash drop` | Stashes your changed file and then deletes using drop, so your changes are removed and repo is overwritten by the pulled changes |
 | `git merge --abort` | Revert a pull |
 | `git reset --hard origin/main` | Overwrite inconsistencies, beware your changes will be lost |
+|`git commit --amend`<br>`git push --force-with-lease origin main`|Change message of existing commit (remote repo)<br>First opens a window to change a message<br>`main` is the name of your branch, change if not `main`|
